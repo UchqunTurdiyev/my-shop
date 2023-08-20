@@ -1,12 +1,27 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
+import Image from 'next/image';
 
 const Hero = () => {
+	const [loading, setLoading] = useState(true);
+
 	return (
 		<section className='text-gray-600 body-font'>
-			<div className='container mx-auto flex px-5 py-24 md:flex-row flex-col items-center'>
-				<div className='lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0'>
-					<img className='object-cover object-center rounded' alt='hero' src='https://dummyimage.com/720x600' />
-				</div>
+			<div className='container w-full mx-auto flex px-5 py-24 md:flex-row flex-col items-center'>
+				{/* <div className='lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0'> */}
+				<Image
+					src={
+						'https://img.freepik.com/free-photo/side-view-shopping-tray-cyber-monday-concept_23-2148669957.jpg?size=626&ext=jpg&ga=GA1.2.1174532804.1692540310&semt=ais'
+					}
+					width={500}
+					height={500}
+					alt={'Hero image'}
+					className={` object-contain duration-700 ease-in-out group-hover:opacity-75 ${
+						loading ? ' scale-110 blur-2xl grayscale' : 'scale-100 blur-0 grayscale-0'
+					}`}
+					onLoadingComplete={() => setLoading(false)}
+				/>
+				{/* </div> */}
 				<div className='lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center'>
 					<h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900'>
 						Knausgaard typewriter readymade marfa

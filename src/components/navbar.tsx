@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { BsCartPlusFill } from 'react-icons/bs';
 
 export default function Navbar() {
 	return (
@@ -27,11 +28,13 @@ export default function Navbar() {
 					<a className='mr-5 hover:text-gray-900'>Third Link</a>
 					<a className='mr-5 hover:text-gray-900'>Fourth Link</a>
 				</nav>
-				<button className='inline-flex items-center text-white bg-blue-600  py-1 px-3 focus:outline-none hover:bg-transparent hover:border-blue-600 border-2 hover:text-blue-600 rounded text-base mt-4 md:mt-0'>
-					Login
-				</button>
+				<Link href={'/shopping-card'}>
+					<button className='inline-flex items-center text-white bg-blue-600  py-1 px-3 focus:outline-none hover:bg-transparent hover:border-blue-600 border-2 hover:text-blue-600 rounded text-base mt-4 md:mt-0'>
+						My Bag <BsCartPlusFill className='ml-2' />
+					</button>
+				</Link>
 				<button className='inline-flex ml-2 items-centerw-full rounded-md py-1 px-3 hover:bg-blue-600 hover:text-white hover:border-transparent border-blue-600 border-2 bg-transparent text-black focus:outline-none  text-base mt-4 md:mt-0'>
-					Sign up
+					Login
 				</button>
 			</div>
 		</header>

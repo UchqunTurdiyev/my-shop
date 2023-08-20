@@ -8,11 +8,14 @@ import CustomImage from '@/components/image';
 import { FaStar } from 'react-icons/fa';
 import { BsStar } from 'react-icons/bs';
 import ReactStars from 'react-stars';
+import { toast } from 'react-toastify';
 
 const ProductDetailedPage = () => {
 	const [loading, setLoading] = useState<boolean>(false);
 	const [product, setProduct] = useState<ProductType>();
 	const [isOpen, setIsOpen] = useState(true);
+	const [isAdded, setIsAdded] = useState(false);
+
 	const { id } = useParams();
 	const router = useRouter();
 
@@ -31,6 +34,30 @@ const ProductDetailedPage = () => {
 		setIsOpen(false);
 		router.back();
 	}
+
+	const addToCard = () => {
+		setIsAdded(true);
+		const products: ProductType[] = JSON.parse(localStorage.getItem('cart') as string) || [];
+		const isExistProducts = products.find(c => c.id === product?.id);
+
+		if (isExistProducts) {
+			const updatedData = products.map(c => {
+				if (c.id === product?.id) {
+					return {
+						...c,
+						quantity: c.quantity + 1,
+					};
+				}
+
+				return c;
+			});
+			localStorage.setItem('cart', JSON.stringify(updatedData));
+		} else {
+			const data = [...products, { ...product, quantity: 1 }];
+			localStorage.setItem('cart', JSON.stringify(data));
+		}
+		toast('Product added to your bag!!');
+	};
 
 	return (
 		<Dialog open={isOpen} onClose={handlClose} className='relative z-50'>
@@ -72,7 +99,10 @@ const ProductDetailedPage = () => {
 										<p className='line-clamp-5 text-sm'>{product?.description}</p>
 									</div>
 									<div className='space-y-3 text-sm'>
-										<button className='w-full rounded-md py-2 bg-blue-600 text-white border-transparent hover:border-blue-600 border-2 hover:bg-transparent hover:text-black'>
+										<button
+											onClick={addToCard}
+											className='w-full rounded-md py-2 bg-blue-600 text-white border-transparent hover:border-blue-600 border-2 hover:bg-transparent hover:text-black'
+										>
 											Add to bag
 										</button>
 										<button
