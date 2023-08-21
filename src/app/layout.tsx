@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import NotFound from './product/[id]/not-found';
 
 const montserrat = Montserrat({ subsets: ['latin'], display: 'swap' });
 

@@ -23,10 +23,15 @@ export default function Navbar() {
 					<span className='ml-3 text-xl'>Tailblocks</span>
 				</Link>
 				<nav className='md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center'>
-					<a className='mr-5 hover:text-gray-900'>Home</a>
-					<a className='mr-5 hover:text-gray-900'>About</a>
-					<a className='mr-5 hover:text-gray-900'>Third Link</a>
-					<a className='mr-5 hover:text-gray-900'>Fourth Link</a>
+					<Link href={'/'} className='mr-5 hover:text-gray-900'>
+						Home
+					</Link>
+					<Link href={'/products'} className='mr-5 hover:text-gray-900'>
+						Products
+					</Link>
+					<Link href={'/contact'} className='mr-5 hover:text-gray-900'>
+						Contact
+					</Link>
 				</nav>
 				<Link href={'/shopping-card'}>
 					<button className='inline-flex items-center text-white bg-blue-600  py-1 px-3 focus:outline-none hover:bg-transparent hover:border-blue-600 border-2 hover:text-blue-600 rounded text-base mt-4 md:mt-0'>
