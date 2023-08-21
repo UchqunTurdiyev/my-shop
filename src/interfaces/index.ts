@@ -8,3 +8,9 @@ export interface ProductType {
 	quantity: number;
 	rating: { rate: number; count: number };
 }
+
+export interface MyComponentProps {
+	key: number;
+	product: ProductType;
+	search: string;
+}

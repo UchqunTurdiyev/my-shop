@@ -1,6 +1,5 @@
 'use client';
 import { ProductType } from '@/interfaces';
-import Image from 'next/image';
 import Link from 'next/link';
 import React, { FC } from 'react';
 import CustomImage from './image';
