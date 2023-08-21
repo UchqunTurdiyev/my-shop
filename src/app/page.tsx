@@ -1,4 +1,5 @@
 import Hero from '@/components/hero';
+import HeroFeatured from '@/components/hero-featured';
 import { ProductList } from '@/components/product-list';
 import { ProductType } from '@/interfaces';
 
@@ -10,6 +11,7 @@ export default async function Home() {
 		<div className='min-h-screen max-w-7xl mx-auto px-8 xl:0 '>
 			<Hero />
 			<ProductList product={product} />
+			<HeroFeatured />
 		</div>
 	);
 }

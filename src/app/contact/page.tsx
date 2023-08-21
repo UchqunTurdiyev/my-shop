@@ -3,7 +3,7 @@ import React from 'react';
 export default function ContactPage() {
 	return (
 		<section className='text-gray-600 body-font relative'>
-			<div className='container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap'>
+			<div className='container px-5 py-4 mx-auto flex sm:flex-nowrap flex-wrap'>
 				<div className='lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative'>
 					<iframe
 						width='100%'
@@ -22,9 +22,13 @@ export default function ContactPage() {
 						</div>
 						<div className='lg:w-1/2 px-6 mt-4 lg:mt-0'>
 							<h2 className='title-font font-semibold text-gray-900 tracking-widest text-xs'>EMAIL</h2>
-							<a className='text-indigo-500 leading-relaxed'>example@email.com</a>
+							<a href='mailto:uchqunjonturdiev@gmail.com ' className='text-indigo-500 leading-relaxed'>
+								uchqunjonturdiev@gmail.com
+							</a>
 							<h2 className='title-font font-semibold text-gray-900 tracking-widest text-xs mt-4'>PHONE</h2>
-							<p className='leading-relaxed'>123-456-7890</p>
+							<a href='tel: +998996277727' className='leading-relaxed'>
+								(99) 627-77-27
+							</a>
 						</div>
 					</div>
 				</div>

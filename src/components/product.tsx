@@ -8,7 +8,7 @@ const Product: FC<{ product: ProductType }> = ({ product }) => {
 	return (
 		<Link
 			href={`/product/${product.id}`}
-			className='h-[400px] flex flex-col p-6 rounded-lg group hover:scale-105 transition-transform easy-out duration-200 border'
+			className='h-[400px] shadow-md flex flex-col p-6 rounded-lg group hover:scale-105 transition-transform easy-out duration-200 border'
 		>
 			<div className='relative max-h-80 flex-1'>
 				<CustomImage product={product} fill />
