@@ -69,9 +69,9 @@ const ProductDetailedPage = () => {
 						{loading ? (
 							<div className='h-8 w-8 rounded-full border-2 border-dotted border-blue-600 animate-spin' />
 						) : (
-							<div className='flex gap-x-8 h-96'>
+							<div className='flex flex-col md:flex-row gap-x-8 md:h-96 h-[500px]'>
 								{product?.image && (
-									<div className='relative w-72  h-full hidden md:inline'>
+									<div className='relative sm:w-72 w-52  mx-auto my-4  h-full  md:inline'>
 										<CustomImage product={product} fill />
 									</div>
 								)}

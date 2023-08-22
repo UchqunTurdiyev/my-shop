@@ -8,8 +8,8 @@ export default async function ProductsPage() {
 	const product: ProductType[] = await res.json();
 	return (
 		<div className='min-h-screen max-w-7xl mx-auto px-8 xl:0 '>
-			<Featured />;
-			<section className='flex flex-col space-y-12'>
+			<Featured />
+			<section className='flex flex-col space-y-12 mb-8'>
 				<div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-10 gap-x-6 xl:gap-x-8'>
 					{product.map(product => (
 						<Product key={product.id} product={product} />

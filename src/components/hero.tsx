@@ -6,8 +6,8 @@ const Hero = () => {
 
 	return (
 		<>
-			<div className='hero mt-4 bg-gray-100 py-16'>
-				<div className='container px-4 sm:px-8 lg:px-16 xl:px-20 mx-auto'>
+			<div className=' mt-4 bg-gray-100 py-16'>
+				<div className='md:px-8 px-2 lg:px-16 xl:px-20 mx-auto'>
 					<div className='hero-wrapper grid grid-cols-1 md:grid-cols-12 gap-8 items-center'>
 						<div className='hero-text col-span-6'>
 							<h1 className=' font-bold text-4xl md:text-5xl max-w-xl text-gray-900 leading-tight'>Our best quality goods</h1>

@@ -31,11 +31,11 @@ export const ProductList: FC<{ product: ProductType[] }> = ({ product }) => {
 
 	return (
 		<div>
-			<div className='min-h-screen max-w-7xl mx-auto px-8 xl:0 '>
+			<div className='min-h-screen max-w-7xl mx-auto md:px-8 px-2 xl:0 '>
 				<section className='flex flex-col space-y-12'>
 					<h1 className='text-5xl font-bold text-center mt-16'>My shop deal</h1>
-					<div className='flex w-full md:justify-start justify-center items-end'>
-						<div className='mr-6 flex items-center flex-wrap gap-2'>
+					<div className='flex flex-col md:flex-row w-full md:justify-start justify-center items-end'>
+						<div className='md:mr-6 flex items-center flex-wrap gap-2'>
 							<button
 								onClick={handlAllCategory}
 								className='flex items-center gap-2 text-white bg-indigo-500 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-600 rounded text-md'
@@ -52,7 +52,7 @@ export const ProductList: FC<{ product: ProductType[] }> = ({ product }) => {
 								</button>
 							))}
 						</div>
-						<div className='relative mr-4 lg:w-full xl:w-1/2 w-2/4'>
+						<div className='relative  w-full xl:w-1/2 mt-4 md:mt-0'>
 							<input
 								placeholder='Search products...'
 								type='text'

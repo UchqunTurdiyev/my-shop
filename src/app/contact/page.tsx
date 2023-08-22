@@ -4,7 +4,7 @@ export default function ContactPage() {
 	return (
 		<section className='text-gray-600 body-font relative'>
 			<div className='container px-5 py-4 mx-auto flex sm:flex-nowrap flex-wrap'>
-				<div className='lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative'>
+				<div className=' lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative'>
 					<iframe
 						width='100%'
 						height='100%'
@@ -15,7 +15,7 @@ export default function ContactPage() {
 						style={{ filter: 'grayscale(1) contrast(1.2) opacity(0.8)' }}
 						src='https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d6011.951465899612!2d67.01963760277641!3d39.51180042613581!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d39.5138053!2d67.02321309999999!5e1!3m2!1sru!2sus!4v1658750567336!5m2!1sru!2sus'
 					></iframe>
-					<div className='bg-white relative flex flex-wrap py-6 rounded shadow-md'>
+					<div className='bg-white mt-40 md:mt-0 relative flex flex-wrap py-6 rounded shadow-md'>
 						<div className='lg:w-1/2 px-6'>
 							<h2 className='title-font font-semibold text-gray-900 tracking-widest text-xs'>ADDRESS</h2>
 							<p className='mt-1'>Samarkand region of Uzbekistan</p>

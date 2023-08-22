@@ -1,126 +1,140 @@
+import Image from 'next/image';
 import React from 'react';
 
 export default function Featured() {
 	return (
 		<section className='text-gray-600 body-font'>
-			<div className='container px-5 py-24 mx-auto'>
-				<h1 className='sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20'>
-					Raw Denim Heirloom Man Braid
-					<br className='hidden sm:block' />
-					Selfies Wayfarers
-				</h1>
-				<div className='flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6'>
-					<div className='p-4 md:w-1/3 flex'>
-						<div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0'>
-							<svg
-								fill='none'
-								stroke='currentColor'
-								strokeLinecap='round'
-								strokeLinejoin='round'
-								strokeWidth='2'
-								className='w-6 h-6'
-								viewBox='0 0 24 24'
-							>
-								<path d='M22 12h-4l-3 9L9 3l-3 9H2'></path>
-							</svg>
-						</div>
-						<div className='flex-grow pl-6'>
-							<h2 className='text-gray-900 text-lg title-font font-medium mb-2'>Shooting Stars</h2>
-							<p className='leading-relaxed text-base'>
-								Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps
-								microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.
-							</p>
-							<a className='mt-3 text-indigo-500 inline-flex items-center'>
-								Learn More
+			<div className='container px-5 py-24 mx-auto flex flex-wrap'>
+				<div className='flex flex-wrap w-full'>
+					<div className='lg:w-2/5 md:w-1/2 md:pr-10 md:py-6'>
+						<div className='flex relative pb-12'>
+							<div className='h-full w-10 absolute inset-0 flex items-center justify-center'>
+								<div className='h-full w-1 bg-gray-200 pointer-events-none'></div>
+							</div>
+							<div className='flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10'>
 								<svg
 									fill='none'
 									stroke='currentColor'
 									strokeLinecap='round'
 									strokeLinejoin='round'
 									strokeWidth='2'
-									className='w-4 h-4 ml-2'
+									className='w-5 h-5'
 									viewBox='0 0 24 24'
 								>
-									<path d='M5 12h14M12 5l7 7-7 7'></path>
+									<path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'></path>
 								</svg>
-							</a>
+							</div>
+							<div className='flex-grow pl-4'>
+								<h2 className='font-medium title-font text-sm text-gray-900 mb-1 tracking-wider'>STEP 1</h2>
+								<p className='leading-relaxed'>
+									VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.
+								</p>
+							</div>
 						</div>
-					</div>
-					<div className='p-4 md:w-1/3 flex'>
-						<div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0'>
-							<svg
-								fill='none'
-								stroke='currentColor'
-								strokeLinecap='round'
-								strokeLinejoin='round'
-								strokeWidth='2'
-								className='w-6 h-6'
-								viewBox='0 0 24 24'
-							>
-								<circle cx='6' cy='6' r='3'></circle>
-								<circle cx='6' cy='18' r='3'></circle>
-								<path d='M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12'></path>
-							</svg>
-						</div>
-						<div className='flex-grow pl-6'>
-							<h2 className='text-gray-900 text-lg title-font font-medium mb-2'>The Catalyzer</h2>
-							<p className='leading-relaxed text-base'>
-								Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps
-								microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.
-							</p>
-							<a className='mt-3 text-indigo-500 inline-flex items-center'>
-								Learn More
+						<div className='flex relative pb-12'>
+							<div className='h-full w-10 absolute inset-0 flex items-center justify-center'>
+								<div className='h-full w-1 bg-gray-200 pointer-events-none'></div>
+							</div>
+							<div className='flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10'>
 								<svg
 									fill='none'
 									stroke='currentColor'
 									strokeLinecap='round'
 									strokeLinejoin='round'
 									strokeWidth='2'
-									className='w-4 h-4 ml-2'
+									className='w-5 h-5'
 									viewBox='0 0 24 24'
 								>
-									<path d='M5 12h14M12 5l7 7-7 7'></path>
+									<path d='M22 12h-4l-3 9L9 3l-3 9H2'></path>
 								</svg>
-							</a>
+							</div>
+							<div className='flex-grow pl-4'>
+								<h2 className='font-medium title-font text-sm text-gray-900 mb-1 tracking-wider'>STEP 2</h2>
+								<p className='leading-relaxed'>
+									Vice migas literally kitsch +1 pok pok. Truffaut hot chicken slow-carb health goth, vape typewriter.
+								</p>
+							</div>
 						</div>
-					</div>
-					<div className='p-4 md:w-1/3 flex'>
-						<div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0'>
-							<svg
-								fill='none'
-								stroke='currentColor'
-								strokeLinecap='round'
-								strokeLinejoin='round'
-								strokeWidth='2'
-								className='w-6 h-6'
-								viewBox='0 0 24 24'
-							>
-								<path d='M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2'></path>
-								<circle cx='12' cy='7' r='4'></circle>
-							</svg>
-						</div>
-						<div className='flex-grow pl-6'>
-							<h2 className='text-gray-900 text-lg title-font font-medium mb-2'>Neptune</h2>
-							<p className='leading-relaxed text-base'>
-								Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps
-								microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.
-							</p>
-							<a className='mt-3 text-indigo-500 inline-flex items-center'>
-								Learn More
+						<div className='flex relative pb-12'>
+							<div className='h-full w-10 absolute inset-0 flex items-center justify-center'>
+								<div className='h-full w-1 bg-gray-200 pointer-events-none'></div>
+							</div>
+							<div className='flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10'>
 								<svg
 									fill='none'
 									stroke='currentColor'
 									strokeLinecap='round'
 									strokeLinejoin='round'
 									strokeWidth='2'
-									className='w-4 h-4 ml-2'
+									className='w-5 h-5'
 									viewBox='0 0 24 24'
 								>
-									<path d='M5 12h14M12 5l7 7-7 7'></path>
+									<circle cx='12' cy='5' r='3'></circle>
+									<path d='M12 22V8M5 12H2a10 10 0 0020 0h-3'></path>
 								</svg>
-							</a>
+							</div>
+							<div className='flex-grow pl-4'>
+								<h2 className='font-medium title-font text-sm text-gray-900 mb-1 tracking-wider'>STEP 3</h2>
+								<p className='leading-relaxed'>
+									Coloring book nar whal glossier master cleanse umami. Salvia +1 master cleanse blog taiyaki.
+								</p>
+							</div>
+						</div>
+						<div className='flex relative pb-12'>
+							<div className='h-full w-10 absolute inset-0 flex items-center justify-center'>
+								<div className='h-full w-1 bg-gray-200 pointer-events-none'></div>
+							</div>
+							<div className='flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10'>
+								<svg
+									fill='none'
+									stroke='currentColor'
+									strokeLinecap='round'
+									strokeLinejoin='round'
+									strokeWidth='2'
+									className='w-5 h-5'
+									viewBox='0 0 24 24'
+								>
+									<path d='M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2'></path>
+									<circle cx='12' cy='7' r='4'></circle>
+								</svg>
+							</div>
+							<div className='flex-grow pl-4'>
+								<h2 className='font-medium title-font text-sm text-gray-900 mb-1 tracking-wider'>STEP 4</h2>
+								<p className='leading-relaxed'>
+									VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.
+								</p>
+							</div>
+						</div>
+						<div className='flex relative'>
+							<div className='flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10'>
+								<svg
+									fill='none'
+									stroke='currentColor'
+									strokeLinecap='round'
+									strokeLinejoin='round'
+									strokeWidth='2'
+									className='w-5 h-5'
+									viewBox='0 0 24 24'
+								>
+									<path d='M22 11.08V12a10 10 0 11-5.93-9.14'></path>
+									<path d='M22 4L12 14.01l-3-3'></path>
+								</svg>
+							</div>
+							<div className='flex-grow pl-4'>
+								<h2 className='font-medium title-font text-sm text-gray-900 mb-1 tracking-wider'>FINISH</h2>
+								<p className='leading-relaxed'>
+									Pitchfork ugh tattooed scenester echo park gastropub whatever cold-pressed retro.
+								</p>
+							</div>
 						</div>
 					</div>
+					<Image
+						width={400}
+						height={300}
+						className='lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12'
+						src='https://pbs.twimg.com/media/FY1iO5GWAAMRNJs?format=jpg&name=4096x4096'
+						alt='step'
+					/>
 				</div>
 			</div>
 		</section>
